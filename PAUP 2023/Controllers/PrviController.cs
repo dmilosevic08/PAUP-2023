@@ -33,8 +33,13 @@ namespace PAUP_2023.Controllers
         {
             ViewBag.Ime = "Josko";
             ViewBag.Prezime = "Lokas";
-            ViewBag.GRodenja = 1970;
+            ViewBag.GRodenja = 1975;
             return View();
+        }
+
+        public string VratiVrijeme()
+        {
+            return DateTime.Now.ToString();
         }
     }
 }
